@@ -1,9 +1,10 @@
 import React from 'react';
+import _ from 'lodash';
+
 import { Sparklines, SparklinesLine, SparklinesReferenceLine } from 'react-sparklines';
-import _ from 'underscore';
 
 export default (props) => {
-  function average(data) = {
+  function average(data) {
     return _.round(_.sum(data)/data.length);
   }
   
@@ -14,7 +15,7 @@ export default (props) => {
         <SparklinesReferenceLine type='avg' />
       </Sparklines>
       <div>
-        {average(props.data)}
+        {average(props.data)} {props.units}
       </div>
     </div>
   );
