@@ -1,21 +1,15 @@
 import React, { Component } from 'react';
 
-<<<<<<< HEAD
-import BookList from '../containers/book-list';
-=======
 import SearchBar from '../containers/search_bar';
->>>>>>> Working API request and back up to speed
+import WeatherList from '../containers/weather_list';
 
 export default class App extends Component {
   render() {
     return (
-<<<<<<< HEAD
       <div>
-        <BookList />
+        <SearchBar />
+        <WeatherList />
       </div>
-=======
-      <div><SearchBar /></div>
->>>>>>> Working API request and back up to speed
     );
   }
 }

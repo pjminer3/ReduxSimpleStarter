@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-export function selectBook(book) {
-  // selectBook is is an actionCreator that needs to return an action: an object with a 'type' property
-  return {
-    type: 'BOOK_SELECTED',
-    payload: book,
-  }
-}
-
-=======
 import axios from 'axios';
 
 const API_KEY = 'a7c6330c6bae9e3cb15a782c927abe06';
@@ -24,4 +14,3 @@ export function fetchWeather(city) {
     payload: request, // passing promise 
   }
 }
->>>>>>> Working API request and back up to speed
